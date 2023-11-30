@@ -1,0 +1,3 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("table"),t=e.querySelector("tbody"),r=Array.from(t.querySelectorAll("tr"));e.querySelectorAll("th").forEach(function(e,n){e.addEventListener("click",function(){r.sort(function(e,t){var r=e.children[n].textContent.trim(),o=t.children[n].textContent.trim(),c=isNaN(r)?r:parseFloat(r.replace(/[^0-9.-]+/g,"")),a=isNaN(o)?o:parseFloat(o.replace(/[^0-9.-]+/g,""));return c<a?-1:c>a?1:0}),r.forEach(function(e){return t.removeChild(e)}),r.forEach(function(e){return t.appendChild(e)})})})});//# sourceMappingURL=index.181b8304.js.map
+
+//# sourceMappingURL=index.181b8304.js.map
